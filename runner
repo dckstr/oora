@@ -1,0 +1,1 @@
+for i in {1..9}; do echo $i; gcc mm$i.c -o mm$i -D_GNU_SOURCE -O0 -std=c99 -I ~/papi/include -L ~/papi/lib ~/papi/lib/libpapi.a && ./mm$i; echo "---------"; done
